@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(0, 0, 255, 0.4);
+  font-family: "Helvetica", "Arial", "sans-serif";
+}
+.card {
+  background-color: rgba(0, 0, 255, 0.5);
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  margin-top: 10%;
+}
+p {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 2em 3em;
+}
+p:first-child {
+  background-color: white;
+  padding: 30px;
+  width: 200px;
+  font-size: 20px;
+}
+.voeux {
+  display: none;
+  padding: 20px;
+  width: 220px;
+  color: white;
+}
+p,
+.voeux {
+  font-weight: bold;
+}
+.newBody {
+  background: url("../anniversaire.jpg") no-repeat;
+  background-size: 400px 600px;
+}
+@media screen and (min-width: 320px) {
+  .card {
+    width: 300px;
+    height: 600px;
+  }
+  p:first-child {
+    width: 100px;
+    margin: 0.5em 3em;
+  }
+  .voeux {
+    width: 110px;
+  }
+  .newBody {
+    background-size: 300px 600px;
+  }
+}
